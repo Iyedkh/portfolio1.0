@@ -53,6 +53,23 @@ body {
 .navbar ul a li {
     font-size: 1em;
 }
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar ul a {
+        margin: 5px 0;
+        width: 100%;
+    }
+}
 
 .container {
     padding: 20px;
@@ -67,14 +84,31 @@ body {
     height: 90vh;
     gap: 50px;
 }
-
+@media screen and (max-width: 768px) {
+    .main {
+        flex-direction: column;
+        gap: 20px;
+        height: auto;
+        margin-bottom: 30px;
+    }
+    
+}
 .creative {
     text-align: left;
     height: 60%;
     flex: 1;
     padding-right: 20px;
 }
-
+@media screen and (max-width: 768px) {
+    .creative {
+        display: flex;
+            flex-direction: column;
+            align-items: center;
+    }
+    .creative h1 {
+        font-size: 7em;
+    }
+}
 
 .creative h1 {
     height: 100%;
@@ -84,7 +118,7 @@ body {
     color: #fff;
     align-items: center;
     justify-content: center;
-    font-size: 7em;
+    font-size: 5em;
     margin: 0;
     line-height: 1.2;
     font-family: "Lora", serif;
@@ -161,7 +195,12 @@ body {
     padding: 20px;
 }
 
-
+@media screen and (max-width: 768px) {
+    .me {
+        height: auto;
+    }
+    
+}
 .me_title {
     font-size: 3em;
     font-weight: bold;
@@ -180,6 +219,15 @@ body {
     width: 80%; 
     margin-top: 40px;
 }
+@media screen and (max-width: 768px) {
+    .skills {
+       
+        flex-direction: column;
+        gap: 20px;
+        height: auto;
+    }
+    
+}
 
 
 .web, .data {
@@ -191,7 +239,12 @@ body {
     color: white;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
-
+@media screen and (max-width: 768px) {
+    .web, .data {
+        width: 100%;
+    }
+    
+}
 
  .data h2 {
     font-size: 1em;
@@ -269,7 +322,12 @@ body {
     flex-direction: column;
     text-align: center;
 }
-
+@media screen  and (max-width: 768px) {
+    .resume-section {
+        padding: 20px;
+    }
+    
+}
 .section-heading {
     font-size: 2.5rem;
     color: #fff;
@@ -329,6 +387,54 @@ body {
     align-items: center;
     color: #fff;
 }
+@media screen and (max-width: 768px) {
+    .contact-section {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        width: 80%;
+        margin: auto;
+        background-color: #000;
+    }
+    .contact-content {
+        flex-direction: column;
+        gap: 20px;
+       
+    }
+    .contact-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact-text h2 {
+        font-size: 3rem;
+        color: #0000009a;
+    }
+
+    .contact-text p {
+        font-size: 1rem;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .contact-form button {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .social-icons {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}
 
 .contact-content {
     display: flex;
@@ -338,7 +444,7 @@ body {
 }
 
 .contact-text {
-    width: 40%;
+    width: 100%;
 }
 
 .contact-text h2 {
